@@ -13,7 +13,4 @@ phases:
 
 artifacts:
   files:
-    - appspec.yml
-    - server.js
-    - package.json
-    - scripts/**/*
+    - '**/*'
