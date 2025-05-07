@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Node.js...
+      - curl -sL https://rpm.nodesource.com/setup_18.x | bash -
+      - yum install -y nodejs
+  build:
+    commands:
+      - echo Build phase - install dependencies
+      - npm install
+
+artifacts:
+  files:
+    - appspec.yml
+    - server.js
+    - package.json
+    - scripts/**/*
